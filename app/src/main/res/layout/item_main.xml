@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="8dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:padding="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<com.google.android.material.card.MaterialCardView
+    android:id="@+id/carView"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    android:layout_marginStart="8dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="8dp"
+    android:layout_marginTop="4dp"
+    android:layout_width="150dp"
+    android:layout_height="100dp">
+    <ImageView
+        android:id="@+id/iv_main"
+        android:scaleType="centerInside"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/tv_main"
+            app:layout_constraintStart_toEndOf="@id/carView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="4dp"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:id="@+id/tv_about"
+            app:layout_constraintStart_toStartOf="@id/tv_main"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="4dp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/tv_main"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MenuFragment">
+
+    <com.google.android.material.card.MaterialCardView
+        android:backgroundTint="#479EFF"
+        android:layout_marginBottom="4dp"
+        app:cardElevation="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <androidx.appcompat.widget.Toolbar
+        android:padding="8dp"
+        android:backgroundTint="#479EFF"
+        android:background="?android:attr/windowBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/iv_back"
+                    android:src="@drawable/ic_baseline_arrow_back_24"
+                    android:padding="8dp"
+                    android:backgroundTint="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:text="Меню"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="32dp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.card.MaterialCardView>
+
+    <ImageView
+        android:src="@drawable/iv_menu"
+        android:layout_width="match_parent"
+        android:scaleType="centerCrop"
+        android:layout_weight="2"
+        android:layout_height="0dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="0.5"
+        android:layout_margin="4dp"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Еда:"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_margin="16dp"
+            android:layout_marginStart="16dp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:text="Салат: 45 рублей \nГусеница: 40 рублей. \nПирожок с капустой/карошкой: 25 рублей\nТрубочка со сгущенкой: 45 рублей.\nРожки с котлетой: 50 рублей.\nВетчина с сыром: 30 рублей"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:layout_marginStart="16dp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:text="Напитки:"
+            android:layout_marginTop="16dp"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginStart="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:text="Сок: 25 рублей\nFlash: 50 рублей\nЧай: 10 рублей"
+            android:layout_margin="16dp"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</LinearLayout>

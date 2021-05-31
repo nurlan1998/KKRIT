@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/newsFragment2"
+        android:name="com.example.kraskrit.ui.NewsFragment"
+        android:label="fragment_news"
+        tools:layout="@layout/fragment_news" />
+    <fragment
+        android:id="@+id/aboutFragment2"
+        android:name="com.example.kraskrit.ui.AboutFragment"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.kraskrit.ui.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_aboutFragment2"
+            app:destination="@id/aboutFragment2" />
+        <action
+            android:id="@+id/action_mainFragment_to_newsFragment2"
+            app:destination="@id/newsFragment2" />
+        <action
+            android:id="@+id/action_mainFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_staffLeadershipFragment"
+            app:destination="@id/staffLeadershipFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_scheduleFragment"
+            app:destination="@id/scheduleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.example.kraskrit.ui.MenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" />
+    <fragment
+        android:id="@+id/scheduleFragment"
+        android:name="com.example.kraskrit.ui.ScheduleFragment"
+        android:label="fragment_schedule"
+        tools:layout="@layout/fragment_schedule" />
+    <fragment
+        android:id="@+id/staffLeadershipFragment"
+        android:name="com.example.kraskrit.ui.StaffLeadershipFragment"
+        android:label="fragment_staff_leadership"
+        tools:layout="@layout/fragment_staff_leadership" >
+        <action
+            android:id="@+id/action_staffLeadershipFragment_to_fullPhotoFragment"
+            app:destination="@id/fullPhotoFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/fullPhotoFragment"
+        android:name="com.example.kraskrit.ui.FullPhotoFragment"
+        android:label="fragment_full_photo"
+        tools:layout="@layout/fragment_full_photo" >
+        <action
+            android:id="@+id/action_fullPhotoFragment_to_staffLeadershipFragment"
+            app:destination="@id/staffLeadershipFragment" />
+    </dialog>
+</navigation>
